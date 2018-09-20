@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "get"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "documentDB",
+      "name": "client",
+      "databaseName": "outDatabase",
+      "collectionName": "Ratings",
+      "connection": "azurecosmosajlopen_DOCUMENTDB",
+      "direction": "in",
+      "id": "{Query.id}"
+    }
+  ],
+  "disabled": false
+}

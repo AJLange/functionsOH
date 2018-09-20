@@ -1,0 +1,28 @@
+{
+  "bindings": [
+    {
+      "authLevel": "anonymous",
+      "name": "req",
+      "type": "httpTrigger",
+      "direction": "in",
+      "methods": [
+        "post"
+      ]
+    },
+    {
+      "name": "$return",
+      "type": "http",
+      "direction": "out"
+    },
+    {
+      "type": "documentDB",
+      "name": "outputDocument",
+      "databaseName": "outDatabase",
+      "collectionName": "Ratings",
+      "createIfNotExists": true,
+      "connection": "azurecosmosajlopen_DOCUMENTDB",
+      "direction": "out"
+    }
+  ],
+  "disabled": false
+}

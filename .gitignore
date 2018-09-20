@@ -1,23 +1,23 @@
-# Windows thumbnail cache files
-Thumbs.db
-ehthumbs.db
-ehthumbs_vista.db
+bin
+obj
+csx
+.vs
+edge
+Publish
 
-# Folder config file
-Desktop.ini
+*.user
+*.suo
+*.cscfg
+*.Cache
+project.lock.json
 
-# Recycle Bin used on file shares
-$RECYCLE.BIN/
+/packages
+/TestResults
 
-# Windows Installer files
-*.cab
-*.msi
-*.msm
-*.msp
-
-# Windows shortcuts
-*.lnk
-
-# =========================
-# Operating System Files
-# =========================
+/tools/NuGet.exe
+/App_Data
+/secrets
+/data
+.secrets
+appsettings.json
+local.settings.json
